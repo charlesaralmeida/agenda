@@ -26,7 +26,7 @@ export const ICONS = {
 }
 
 export const LABELS = {
-    TIPO_TRANSPORTE: 'Tipo de Transporte',
+    TIPO_TRANSPORTE: 'Tpo de Transporte',
     TIPO_VEICULO: 'Tipo de Veículo',
     TIPO_BUS: 'Tipo de Ônibus',
     EMBARQUE: 'Embarque',
