@@ -1,0 +1,17 @@
+.nav-photo-login-tooltiptext {
+    visibility: hidden;
+    width: auto;
+    background-color: #002c52;
+    color: #fff;
+    text-align: left;
+    padding: 1%;
+    border-radius: 6px;
+    position: fixed;
+    right: 7%;
+    z-index: 1;
+    margin-top: 5%;
+}
+
+.nav-photo-login:hover+.nav-photo-login-tooltiptext {
+    visibility: visible;
+}

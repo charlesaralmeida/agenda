@@ -1,0 +1,27 @@
+.boarding-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #002c52;
+    font-weight: bolder;
+    font-size: large;
+    font-family: 'Roboto';
+    height: 100%;
+    width: 100%;
+}
+
+.date-time-container {
+    height: 20%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.adress-container {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,0 +1,13 @@
+.container-date-time {
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    font-size: large;
+    font-family: 'Roboto';
+}
+
+.container-date-time-input {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}

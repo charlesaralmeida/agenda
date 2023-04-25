@@ -1,0 +1,26 @@
+.other-info-emprestimo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #002c52;
+    font-weight: bolder;
+    font-size: large;
+    font-family: 'Roboto';
+    height: 40%;
+    width: 100%;
+}
+
+.fund-option-container-emprestimo {
+    display: flex;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+}
+
+.date-container-emprestimo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+    width: 70%;
+}

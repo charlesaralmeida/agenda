@@ -1,0 +1,19 @@
+.passengers-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #002c52;
+    font-weight: bolder;
+    font-size: large;
+    font-family: 'Roboto';
+    height: 100%;
+    width: 100%;
+}
+
+.passengers-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}

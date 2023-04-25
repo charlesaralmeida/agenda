@@ -1,0 +1,13 @@
+.nav-logo-container {
+    display: flex;
+    width: 10%;
+}
+
+.nav-logo-container img {
+    padding-left: 15%;
+    width: 70%;
+}
+
+.nav-logo-container:hover {
+    cursor: pointer;
+}

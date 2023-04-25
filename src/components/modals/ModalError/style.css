@@ -1,0 +1,37 @@
+.modal-error-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.587);
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto';
+}
+
+.modal-error {
+    width: 40%;
+    margin: auto;
+}
+
+.modal-error-title {
+    text-align: center;
+    padding: 2%;
+    background-color: #9e2727;
+    color: white;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.modal-error-text {
+    text-align: center;
+    padding: 2%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: white;
+    color: #535151;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}

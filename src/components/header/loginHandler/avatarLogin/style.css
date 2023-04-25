@@ -1,0 +1,11 @@
+.nav-avatar {
+    width: 20%;
+    display: flex;
+}
+
+.nav-photo-login {
+    border: 1px solid black;
+    width: 85%;
+    border-radius: 50%;
+    margin-left: 4%;
+}

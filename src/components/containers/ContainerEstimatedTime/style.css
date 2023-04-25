@@ -1,0 +1,21 @@
+.container-estimated-date-time {
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    font-size: large;
+    font-family: 'Roboto';
+    width: 60%;
+}
+
+.container-estimated-date-time-input {
+    display: flex;
+    margin-top: 1.5em;
+}
+
+.container-estimated-quantity-time-input {
+    width: 50%;
+}
+
+.container-hour-or-day-select {
+    width: 50%;
+}

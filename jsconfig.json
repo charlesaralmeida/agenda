@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "baseUrl": "src"
+    },
+    "include": ["src"],
+    "rules": {
+        "jsx-a11y/aria-role": [
+            2,
+            {
+                "allowedInvalidRoles": ["text"],
+                "ignoreNonDOM": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,15 @@
+.button-plus {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+[role=fa-circle-plus]:hover {
+    cursor: pointer;
+}
+
+[role=fa-circle-plus]:active {
+    font-size: 90%;
+}

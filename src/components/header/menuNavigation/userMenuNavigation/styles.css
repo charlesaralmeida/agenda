@@ -1,0 +1,37 @@
+.nav-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 75%;
+}
+
+.nav-menu a {
+    width: 25%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    color: #535151;
+    font-weight: bolder;
+    font-size: large;
+    font-family: 'Roboto'
+}
+
+.nav-menu a:nth-child(2), a:nth-child(3) {
+    border-style: solid;
+    border-width: 0px 1px 0px 1px;
+    border-collapse: collapse;
+    border-color: rgba(85, 84, 84, 0.342);
+}
+
+.nav-menu a:hover {
+    font-weight: bold;
+    cursor: pointer;
+    border: 0.25em solid #002c52;
+    padding: 0.25em;
+}
+
+
+.nav-menu a:active {
+    font-size: 90%;
+}

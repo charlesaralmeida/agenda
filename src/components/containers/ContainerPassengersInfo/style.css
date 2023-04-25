@@ -1,0 +1,31 @@
+.container-passenger-info {
+    display: flex;
+    justify-content: space-between;
+    color: #002c52;
+    font-weight: bolder;
+    font-size: large;
+    font-family: 'Roboto';
+    height: 100%;
+}
+
+.main-content-passenger-info {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 80%;
+}
+
+.title-passenger-info {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-passenger-info {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

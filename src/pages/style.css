@@ -1,0 +1,25 @@
+html {
+    height: 98%;
+}
+
+body {
+    height: 100%;
+}
+
+#root {
+    height: 100%;
+}
+
+.pages {
+    height: 100%;
+}
+
+.page-content {
+    height: 80%;
+}
+
+.container-progress {
+    margin: auto;
+    margin-top: 2em;
+    width: 60%;
+}

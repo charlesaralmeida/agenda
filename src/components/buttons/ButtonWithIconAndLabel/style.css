@@ -1,0 +1,30 @@
+.buttonWithIconAndLabel {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    border: 1px solid #002c52;
+    border-radius: 8px;
+    width: 300px;
+    color: #002c52;
+    font-weight: bolder;
+    font-size: large;
+    font-family: 'Roboto'
+}
+
+.buttonWithIconAndLabel:hover {
+    border: 5px solid #002c52;
+    cursor: pointer;
+}
+
+.buttonWithIconAndLabel:active {
+    background-color: #002c5233;
+}
+
+.icon {
+    width: 30%;
+}
+
+.label {
+    width: 50%;
+}

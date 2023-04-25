@@ -1,0 +1,118 @@
+.btn:hover {
+    cursor: pointer;
+}
+
+.link-style {
+    font-style: italic;
+    color: rgb(190, 6, 6);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.link-style:hover {
+    cursor: pointer;
+}
+
+.black {
+    color: black;
+}
+
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    height: 80%;
+}
+
+.upload-container-active {
+    border: 10px solid #fff;
+}
+
+.upload-planilha {
+    display: flex;
+    justify-content: space-between;
+    padding: 10%;
+    border: 1px solid black;
+}
+
+.drag-area {
+    background-color: rgb(196, 195, 195);
+    border: 2px dashed #fff;
+    height: 500px;
+    width: 70%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.drag-area.active {
+    border: 2px solid #fff;
+}
+
+.drag-area .icon {
+    font-size: 100px;
+    color: #fff;
+}
+
+.drag-area header {
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.drag-area span {
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    margin: 10px 0 15px 0;
+}
+
+.drag-area button {
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #5256ad;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.drag-area img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.button {
+    padding: 1%;
+    width: 50%;
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 3px solid rgb(94, 1, 1);
+    background-color: rgb(150, 4, 4);
+    box-shadow: 2px 2px 2px 2px rgba(112, 111, 111, 0.568);
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:active {
+    box-shadow: none;
+}
+
+.input-upload-file {
+    display: none;
+}
+
+.input-upload-file-selected {
+    display: flex;
+}

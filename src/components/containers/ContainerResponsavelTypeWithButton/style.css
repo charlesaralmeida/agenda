@@ -1,0 +1,33 @@
+.container-responsavel-with-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.container-responsavel-type-with-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30%;
+}
+
+.container-responsavel-type-with-button-select {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.container-responsavel-button-plus {
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+}
+
+.container-responsavel-data-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: 50%;
+}

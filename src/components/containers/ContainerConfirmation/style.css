@@ -1,0 +1,34 @@
+.container-confirmation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #002c52;
+    font-weight: bolder;
+    font-size: large;
+    font-family: 'Roboto';
+    height: 490px;
+}
+
+.main-content-confirmation {
+    display: flex;
+    justify-content: space-between;
+    height: 140px;
+    width: 60%;
+}
+
+.container-check-informations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    padding: 1em;
+}
+
+.container-confirm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    padding: 1em;
+    width: 40%;
+}

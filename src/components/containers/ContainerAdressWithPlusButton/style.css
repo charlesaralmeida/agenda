@@ -1,0 +1,35 @@
+.container-adress-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.container-city-uf-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+}
+
+.container-city-uf-button-input {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 0;
+}
+
+.container-button-plus {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+}
+
+.container-intermediate-adress-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 70%;
+}

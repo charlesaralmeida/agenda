@@ -1,0 +1,29 @@
+.container-final-destination-info {
+    display: flex;
+    justify-content: space-between;
+    color: #002c52;
+    font-weight: bolder;
+    font-size: large;
+    font-family: 'Roboto';
+    height: 100%;
+}
+
+.main-content-final-destination-info {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 80%;
+}
+
+.title-final-destination-info {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-final-destination-info {
+    width: 65%;
+    display: flex;
+}

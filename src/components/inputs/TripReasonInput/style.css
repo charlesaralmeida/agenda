@@ -1,0 +1,9 @@
+.other-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.adress-input {
+    width: 100%;
+}
