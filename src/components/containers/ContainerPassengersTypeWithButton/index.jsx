@@ -4,6 +4,7 @@ import DocumentNumberInput from '../../inputs/DocumentNumberInput'
 import PhoneInput from '../../inputs/PhoneInput'
 import ButtonPlus from 'components/buttons/ButtonPlus'
 import './style.css'
+import DestinoSelect from '../../selects/DestinoSelect'
 
 const ContainerPassengersTypeWithButton = ({
     handleChange,
@@ -57,6 +58,11 @@ const ContainerPassengersTypeWithButton = ({
                     handleChange={handleChange}
                     keyValue={'phone'}
                     value={state.editing.phone}
+                />
+                <DestinoSelect
+                    handleChange={handleChange}
+                    keyValue={'destino_passageiro'}
+                    destinosList={state.destinosList}
                 />
             </div>
         </div>

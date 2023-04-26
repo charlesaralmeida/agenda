@@ -147,11 +147,11 @@ export const MESSAGES = {
         },
         ADRESS_EMPTY: {
             TITLE: 'Atenção',
-            TEXT: 'UF, Cidade e Endereço são obrigatórios',
+            TEXT: 'UF, Cidade e Endereço são obrigatórios se existe um tempo de permanência',
         },
         ESTIMATED_TIME_EMPTY: {
             TITLE: 'Atenção',
-            TEXT: 'Deve ser informado o tempo estimado de permanência',
+            TEXT: 'Deve ser informado o tempo estimado de permanência para esse endereço',
         },
         PASSENGER_FIELD_EMPTY: {
             TITLE: 'Atenção',

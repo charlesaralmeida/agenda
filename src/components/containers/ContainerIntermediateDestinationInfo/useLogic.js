@@ -48,13 +48,29 @@ const useLogic = () => {
         })
 
     const handleBackClick = () => {
-        dispatch(decrementProgress())
-        dispatch(setPage(PAGES.BOARDING_INFO))
+        if (checkAdress() || checkEstimatedTime()) {
+            addDestination()
+            if (checkAdress() && checkEstimatedTime()) {
+                dispatch(decrementProgress())
+                dispatch(setPage(PAGES.BOARDING_INFO))
+            }
+        } else {
+            dispatch(decrementProgress())
+            dispatch(setPage(PAGES.BOARDING_INFO))
+        }
     }
 
     const handleForwardClick = () => {
-        dispatch(incrementProgress())
-        dispatch(setPage(PAGES.FINAL_DESTINATION_INFO))
+        if (checkAdress() || checkEstimatedTime()) {
+            addDestination()
+            if (checkAdress() && checkEstimatedTime()) {
+                dispatch(incrementProgress())
+                dispatch(setPage(PAGES.FINAL_DESTINATION_INFO))
+            }
+        } else {
+            dispatch(incrementProgress())
+            dispatch(setPage(PAGES.FINAL_DESTINATION_INFO))
+        }
     }
 
     const handleChangeInfo = (key, value) => {

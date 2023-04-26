@@ -7,6 +7,7 @@ import {
     getPassengersInfo,
     addPassengers,
     removePassengers,
+    getDestinos,
 } from 'redux/slices/agendar'
 import { toggleShowError } from 'redux/slices/modal'
 import { useDispatch, useSelector } from 'react-redux'
@@ -15,6 +16,7 @@ const useLogic = () => {
     const dispatch = useDispatch()
 
     const passengersInfoState = useSelector(getPassengersInfo)
+    const destinos_list = useSelector(getDestinos)
 
     const getPassengerList = () =>
         passengersInfoState.passengersList.map((passenger) => {
@@ -90,6 +92,14 @@ const useLogic = () => {
         }
     }
 
+    const handleDestinos = () => {
+        if (!destinos_list.inicial.adress) destinos_list.inicial = ''
+        if (!destinos_list.final.adress) destinos_list.final = ''
+        if (!destinos_list.inter.length) destinos_list.inter = []
+    }
+
+    handleDestinos()
+
     return {
         getPassengerList,
         handleBackClick,
@@ -99,6 +109,7 @@ const useLogic = () => {
         addPassenger,
         removePassenger,
         passengersInfoState,
+        destinos_list,
     }
 }
 

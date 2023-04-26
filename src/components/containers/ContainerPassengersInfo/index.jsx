@@ -20,6 +20,7 @@ const ContainerPassengersInfo = () => {
         addPassenger,
         removePassenger,
         passengersInfoState,
+        destinos_list,
     } = useLogic()
 
     return (
@@ -58,7 +59,10 @@ const ContainerPassengersInfo = () => {
                     <PassengersInfo
                         handleChange={handleChangeInfo}
                         handleChangeDocumentType={handleChangeDocumentType}
-                        state={passengersInfoState}
+                        state={{
+                            ...passengersInfoState,
+                            destinosList: destinos_list,
+                        }}
                         addPassenger={addPassenger}
                     />
                     <ModalError />

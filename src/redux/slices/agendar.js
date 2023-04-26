@@ -323,5 +323,97 @@ export const getVehicleType = (state) => state.agendar.vehicleType
 export const getTransportType = (state) => state.agendar.transportType
 export const getPassengerSheetList = (state) =>
     state.agendar.passengersSheetList
+export const getDestinos = (state) => {
+    let destinos = { inicial: '', inter: [], final: '' }
+    if (state.agendar.boardingInfo) {
+        destinos.inicial = {
+            uf: state.agendar.boardingInfo.uf
+                ? state.agendar.boardingInfo.uf
+                : '',
+            city: state.agendar.boardingInfo.city
+                ? state.agendar.boardingInfo.city
+                : '',
+            adress: state.agendar.boardingInfo.adress,
+            reference: state.agendar.boardingInfo.reference
+                ? state.agendar.boardingInfo.reference
+                : '',
+            date: state.agendar.boardingInfo.date
+                ? state.agendar.boardingInfo.date
+                : '',
+            time: state.agendar.boardingInfo.time
+                ? state.agendar.boardingInfo.time
+                : '',
+        }
+    }
+
+    if (state.agendar.intermediateDestinationInfo.destinationsList) {
+        if (state.agendar.intermediateDestinationInfo.destinationsList.length) {
+            destinos.inter =
+                state.agendar.intermediateDestinationInfo.destinationsList.map(
+                    (destino, index) => {
+                        return {
+                            id: index,
+                            uf: destino.uf ? destino.uf : '',
+                            city: destino.city ? destino.city : '',
+                            adress: destino.adress ? destino.adress : '',
+                            reference: destino.reference
+                                ? destino.reference
+                                : '',
+                            estimatedTimeType: destino.estimatedTimeType
+                                ? destino.estimatedTimeType
+                                : 'Horas',
+                            estimatedTime: destino.estimatedTime
+                                ? destino.estimatedTime
+                                : 'Tue Sep 13 2022 00:00:00 GMT-0300 (GMT-03:00)',
+                            estimatedDays: destino.estimatedDays
+                                ? destino.estimatedDays
+                                : '0',
+                        }
+                    }
+                )
+        }
+    }
+
+    if (state.agendar.boardingInfo) {
+        destinos.inicial = {
+            uf: state.agendar.boardingInfo.uf
+                ? state.agendar.boardingInfo.uf
+                : '',
+            city: state.agendar.boardingInfo.city
+                ? state.agendar.boardingInfo.city
+                : '',
+            adress: state.agendar.boardingInfo.adress
+                ? state.agendar.boardingInfo.adress
+                : '',
+            reference: state.agendar.boardingInfo.reference
+                ? state.agendar.boardingInfo.reference
+                : '',
+            date: state.agendar.boardingInfo.date
+                ? state.agendar.boardingInfo.date
+                : '',
+            time: state.agendar.boardingInfo.time
+                ? state.agendar.boardingInfo.time
+                : '',
+        }
+    }
+
+    if (state.agendar.finalDestinationInfo) {
+        destinos.final = {
+            uf: state.agendar.finalDestinationInfo.uf
+                ? state.agendar.finalDestinationInfo.uf
+                : '',
+            city: state.agendar.finalDestinationInfo.city
+                ? state.agendar.finalDestinationInfo.city
+                : '',
+            adress: state.agendar.finalDestinationInfo.adress
+                ? state.agendar.finalDestinationInfo.adress
+                : '',
+            reference: state.agendar.finalDestinationInfo.reference
+                ? state.agendar.finalDestinationInfo.reference
+                : '',
+        }
+    }
+    return destinos
+}
 
 export default slice.reducer
