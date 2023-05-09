@@ -7,7 +7,7 @@ const AdressInput = ({ handleChange, keyValue, value }) => {
             <TextField
                 fullWidth
                 label="Endereço"
-                helperText="rua/avenida/praça/nº/etc"
+                helperText="local/rua/avenida/praça/nº/referência/etc"
                 value={value}
                 onChange={(event) => handleChange(keyValue, event.target.value)}
             />

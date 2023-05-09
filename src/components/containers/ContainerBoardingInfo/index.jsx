@@ -4,6 +4,7 @@ import { LABELS } from 'utils/constants'
 import ButtonBackNavigation from 'components/buttons/ButtonBackNavigation'
 import ButtonFowardNavigation from 'components/buttons/ButtonFowardNavigation'
 import BoardingInfo from 'components/containers/BoardingInfo'
+import ModalError from '../../modals/ModalError'
 import './style.css'
 import useLogic from './useLogic'
 import { TRANSPORT_TYPE } from '../../../utils/constants'
@@ -40,6 +41,7 @@ const ContainerBoardingInfo = () => {
                 </div>
             </div>
             <ButtonFowardNavigation handleClick={handleForwardClick} />
+            <ModalError />
         </div>
     )
 }

@@ -1,0 +1,16 @@
+.container_estimated_date_time {
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    font-size: large;
+    font-family: 'Roboto';
+    width: 90%;
+    margin-top: 6%;
+}
+
+.container_input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: medium;
+}

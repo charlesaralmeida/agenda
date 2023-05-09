@@ -29,18 +29,36 @@ const useLogic = () => {
                 ': ' +
                 passenger.documentNumber +
                 ' - Fone: ' +
-                passenger.phone
+                passenger.phone +
+                ' - Endereco: ' +
+                passenger.endereco
             )
         })
 
     const handleBackClick = () => {
-        dispatch(decrementProgress())
-        dispatch(setPage(PAGES.FINAL_DESTINATION_INFO))
+        if (checkSomeFieldNotEmpty()) {
+            addPassenger()
+            if (checkFields()) {
+                dispatch(decrementProgress())
+                dispatch(setPage(PAGES.FINAL_DESTINATION_INFO))
+            }
+        } else {
+            dispatch(decrementProgress())
+            dispatch(setPage(PAGES.FINAL_DESTINATION_INFO))
+        }
     }
 
     const handleForwardClick = () => {
-        dispatch(incrementProgress())
-        dispatch(setPage(PAGES.OTHER_INFORMATIONS))
+        if (checkSomeFieldNotEmpty()) {
+            addPassenger()
+            if (checkFields()) {
+                dispatch(incrementProgress())
+                dispatch(setPage(PAGES.OTHER_INFORMATIONS))
+            }
+        } else {
+            dispatch(incrementProgress())
+            dispatch(setPage(PAGES.OTHER_INFORMATIONS))
+        }
     }
 
     const handleChangeInfo = (key, value) =>
@@ -60,6 +78,16 @@ const useLogic = () => {
             passengersInfoState.editing.vinculo != '' &&
             passengersInfoState.editing.name != '' &&
             passengersInfoState.editing.documentNumber != '' &&
+            passengersInfoState.editing.phone != '' &&
+            passengersInfoState.editing.endereco != ''
+        )
+    }
+
+    const checkSomeFieldNotEmpty = () => {
+        return (
+            //sem necessidade de verificar os selects
+            passengersInfoState.editing.name != '' ||
+            passengersInfoState.editing.documentNumber != '' ||
             passengersInfoState.editing.phone != ''
         )
     }

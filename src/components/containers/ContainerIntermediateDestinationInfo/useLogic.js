@@ -7,6 +7,7 @@ import {
     getIntermediateDestinationInfo,
     addIntermediateDestination,
     removeIntermediateDestination,
+    getVehicleType,
 } from 'redux/slices/agendar'
 import { toggleShowError } from 'redux/slices/modal'
 import { useDispatch, useSelector } from 'react-redux'
@@ -15,6 +16,7 @@ const useLogic = () => {
     const intermediateDestinationInfoState = useSelector(
         getIntermediateDestinationInfo
     )
+    const vehicleType = useSelector(getVehicleType)
     const dispatch = useDispatch()
 
     const getDestinationList = () =>
@@ -168,6 +170,7 @@ const useLogic = () => {
         intermediateDestinationInfoState,
         addDestination,
         removeDestination,
+        vehicleType,
     }
 }
 

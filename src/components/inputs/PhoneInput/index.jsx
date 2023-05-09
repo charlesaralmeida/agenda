@@ -9,7 +9,7 @@ const PhoneInput = ({ handleChange, keyValue, value }) => {
         <div role="phone-input" className="phone-input">
             <TextField
                 fullWidth
-                label="Telefone"
+                label="Celular"
                 value={value}
                 onChange={(event) => {
                     event.target.value = formatPhoneNumber(event.target.value)

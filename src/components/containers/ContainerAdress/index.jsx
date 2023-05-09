@@ -33,11 +33,11 @@ const ContainerAdress = ({ handleChange, state }) => {
                     keyValue={'adress'}
                     value={state.adress}
                 />
-                <ReferencePointInput
+                {/* <ReferencePointInpu
                     handleChange={handleChange}
                     keyValue={'reference'}
                     value={state.reference}
-                />
+                /> */}
             </div>
         </div>
     )

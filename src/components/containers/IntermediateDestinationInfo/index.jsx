@@ -2,11 +2,13 @@ import React from 'react'
 import ContainerAdressWithPlusButton from '../ContainerAdressWithPlusButton'
 import ContainerEstimatedTime from '../ContainerEstimatedTime'
 import './style.css'
+import { VEHICLE_TYPE } from '../../../utils/constants'
 
 const IntermediateDestinationInfo = ({
     handleChange,
     state,
     addDestination,
+    vehicleType,
 }) => {
     return (
         <div
@@ -23,15 +25,18 @@ const IntermediateDestinationInfo = ({
                     addDestination={addDestination}
                 />
             </div>
-            <div
-                className="intermediate-estimated-time-container"
-                role="intermediate-estimated-time-container"
-            >
-                <ContainerEstimatedTime
-                    handleChange={handleChange}
-                    state={state}
-                />
-            </div>
+            {vehicleType === VEHICLE_TYPE.ONIBUS ||
+            vehicleType === VEHICLE_TYPE.VAN ? (
+                <div
+                    className="intermediate-estimated-time-container"
+                    role="intermediate-estimated-time-container"
+                >
+                    <ContainerEstimatedTime
+                        handleChange={handleChange}
+                        state={state}
+                    />
+                </div>
+            ) : null}
         </div>
     )
 }

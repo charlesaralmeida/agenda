@@ -26,7 +26,11 @@ const ContainerOtherInformations = () => {
                 className="main-content-other-info"
             >
                 <div className="title-other-info" role="title-other-info">
-                    <TitleContainer text={LABELS.OTHER_INFO} />
+                    {transportType === TRANSPORT_TYPE.EMPRESTIMO ? (
+                        <TitleContainer text={LABELS.OTHER_INFO_EMPRESTIMO} />
+                    ) : (
+                        <TitleContainer text={LABELS.OTHER_INFO} />
+                    )}
                 </div>
                 <div className="input-other-info" role="input-other-info">
                     {transportType === TRANSPORT_TYPE.EMPRESTIMO ? (

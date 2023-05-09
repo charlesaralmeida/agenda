@@ -19,6 +19,7 @@ const ContainerIntermediateDestinationInfo = () => {
         intermediateDestinationInfoState,
         addDestination,
         removeDestination,
+        vehicleType,
     } = useLogic()
     return (
         <div
@@ -59,6 +60,7 @@ const ContainerIntermediateDestinationInfo = () => {
                         handleChange={handleChangeInfo}
                         state={intermediateDestinationInfoState}
                         addDestination={addDestination}
+                        vehicleType={vehicleType}
                     />
                     <ModalError />
                 </div>

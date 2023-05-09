@@ -61,7 +61,8 @@ const ContainerPassengersTypeWithButton = ({
                 />
                 <DestinoSelect
                     handleChange={handleChange}
-                    keyValue={'destino_passageiro'}
+                    keyValue={'endereco'}
+                    value={state.editing.endereco}
                     destinosList={state.destinosList}
                 />
             </div>

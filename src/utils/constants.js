@@ -29,7 +29,7 @@ export const LABELS = {
     TIPO_TRANSPORTE: 'Tipo de Transporte',
     TIPO_VEICULO: 'Tipo de Veículo',
     TIPO_BUS: 'Tipo de Ônibus',
-    EMBARQUE: 'Embarque',
+    EMBARQUE: 'Endereço inicial',
     LOCAL_RETIRADA: 'Local de Retirada',
     LOCAL_ENTREGA: 'Local de Entrega',
     FINAL_DESTINATION: 'Destino Final',
@@ -38,6 +38,7 @@ export const LABELS = {
     PASSAGEIRO_RESPONSAVEL: 'Passageiro Responsável',
     PASSENGERS_LIST: 'Lista de Passageiros',
     OTHER_INFO: 'Outras Informações',
+    OTHER_INFO_EMPRESTIMO: 'Informações',
 }
 
 export const SUBLABELS = {
@@ -147,7 +148,7 @@ export const MESSAGES = {
         },
         ADRESS_EMPTY: {
             TITLE: 'Atenção',
-            TEXT: 'UF, Cidade e Endereço são obrigatórios se existe um tempo de permanência',
+            TEXT: 'UF, Cidade, Endereço e Tempo de permanência são obrigatórios',
         },
         ESTIMATED_TIME_EMPTY: {
             TITLE: 'Atenção',
@@ -156,6 +157,10 @@ export const MESSAGES = {
         PASSENGER_FIELD_EMPTY: {
             TITLE: 'Atenção',
             TEXT: 'Todos os campos devem ser preenchidos',
+        },
+        BOARDING_FIELD_EMPTY: {
+            TITLE: 'Atenção',
+            TEXT: 'Todos os campos, exceto referência, são obrigatórios',
         },
         SAVING_DATA: {
             TITLE: 'Atenção!',

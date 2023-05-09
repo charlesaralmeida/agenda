@@ -48,6 +48,7 @@ export const initialState = {
             documentType: 'Matricula',
             documentNumber: '',
             phone: '',
+            endereco: '', //'embarque' = embarque, 'destino' = destino final, 1 = dest. intermediario 1, 2 = dest. intermediario 2 ...
         },
         passengersList: [],
         warned: false,
